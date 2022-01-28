@@ -48,8 +48,12 @@
 * Writing commands in quotes at the end of an `ssh` command will directly run it on the remote server, then exit
     * For example, `$ ssh cs15lwi22@ieng6.ucsd.edu "ls"`
 ![optimizedexample](optimizedrunning.png)
+    * This would initially take 34 keystrokes including pressing enter
+    * However, to run a line that you already wrote, you can press the **Up Arrow** to access the most recently line you wrote, taking only 2 keystrokes (up arrow and enter)
 * Using semicolons runs multiple commands on the same line in most terminals
-    * For example, `$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
+    * For example, `[cs15lwi22aah@ieng6-202]:~:36$ javac WhereAmI.java;java WhereAmI`
+    * As opposed to `[cs15lwi22aah@ieng6-202]:~:34$ javac WhereAmI.java` then `[cs15lwi22aah@ieng6-202]:~:35$ java WhereAmI`
+    * They both use 34 keystrokes; however you only have to enter the commands into one line with the semicolon
 
 Thank you so much for reading this post! I hope you find success in setting up remote access and have a great day!
 
