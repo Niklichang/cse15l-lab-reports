@@ -5,6 +5,7 @@
 [Lab Reports](index.md)
 
 [Our Group Markdown-Parse Repository](https://github.com/Obarquinho/markdown-parse)
+
 [Reviewed Markdown-Parse Repository](https://github.com/leo3friedman/markdown-parse/blob/main/MarkdownParse.java)
 
 ## Snippet 1
@@ -14,10 +15,10 @@ Code for test in `MarkdownParseTest.java`:
 ![hi](testSnippet1.png)
 
 My implementation output when running junit test:
-![hi](s1Testoutput.png)
+![hi](s1TestOutput.png)
 
 Reviewed implementation output when running junit test:
-![hi](s1RevTestoutput.png)
+![hi](s1RevTestOutput.png)
 
 I think that there is a small code change that will make my program work for snippet 1 and all related cases that use inline code with backticks. The code change would probably consist of checking for a pair of backticks, and determining whether the backticks are inside a bracket or parentheses(which would still result in a link) or if a pair starts outside and ends inside a bracket or parentheses.
 
@@ -28,10 +29,10 @@ Code for test in `MarkdownParseTest.java`:
 ![hi](testSnippet2.png)
 
 My implementation output when running junit test:
-![hi](s2Testoutput.png)
+![hi](s2TestOutput.png)
 
 Reviewed implementation output when running junit test:
-![hi](s2RevTestoutput.png)
+![hi](s2RevTestOutput.png)
 
 I think that there will be a bigger change required than just 10 lines. It would be more involved because counting many variants of parentheses and nested brackets might need a whole different approach to keeping track of all the pairs inside, and then determining which ones actually count for a link (liking using some sort of stack implementation).
 
@@ -42,14 +43,15 @@ Code for test in `MarkdownParseTest.java`:
 ![hi](testSnippet3.png)
 
 My implementation output when running junit test:
-![hi](s3Testoutput.png)
+![hi](s3TestOutput.png)
 
 Reviewed implementation output when running junit test:
-![hi](s3RevTestoutput.png)
+![hi](s3RevTestOutput.png)
 
 This one will also be a bigger change. The whole point of the code at the moment relies on how it checks for a link on a certain line depending on the open and close parentheses and brackets. When introduced to multiple lines, it becomes a lot more complicated.
 
 Thank you again for reading this post! If you are grading and start an issue on github, put a :) at the end. 
 
 :)
+
 *-Niklas Chang*
